@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - João Felipe (JF Creative Lab)</title>
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/sobre.css">
+  <link rel="stylesheet" href="css/projetos.css">
+  <link rel="stylesheet" href="css/contato.css">
+  
+  <!-- Fontes e Ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Metadados para SEO e redes sociais -->
+  <meta name="description" content="Portfólio de João Felipe - Designer e Desenvolvedor Full Stack.">
+  <meta property="og:title" content="Portfólio - João Felipe (JF Creative Lab)">
+  <meta property="og:description" content="Portfólio de João Felipe - Designer e Desenvolvedor Full Stack.">
+  <meta property="og:image" content="assets/images/preview.jpg">
+  <meta property="og:url" content="https://jfcreativelab.github.io/meu-portfolio/">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <!-- Ícone do menu mobile -->
+  <div class="menu-toggle" id="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Overlay para o menu mobile -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Container do efeito Matrix -->
+  <div class="matrix-effect"></div>
+  
+  <!-- Cabeçalho -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">🏠 Home</a></li>
+        <li><a href="#about">ℹ️ Sobre</a></li>
+        <li><a href="#projects">💻 Projetos</a></li>
+        <li><a href="#contact">📩 Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Seção Home -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="assets/images/foto.jpeg" alt="Foto de João Felipe" class="profile-photo">
+      <h1>João Felipe (JF Creative Lab)</h1>
+      <p>Designer e Desenvolvedor Full Stack | Criatividade e Inovação</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">Ver Projetos</a>
+        <a href="assets/curriculo.pdf" download class="btn">Download CV</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Seção Sobre -->
+  <section id="about" class="about-section">
+    <h2>Sobre Mim</h2>
+    <div class="about-content">
+      <p>
+        Olá! Sou João Felipe, desenvolvedor Full Stack e designer especializado na criação de soluções digitais inovadoras. Minha abordagem combina design sofisticado com alta performance, garantindo projetos visualmente impactantes e funcionalmente impecáveis. Cada site, logotipo ou arte digital que desenvolvo é pensado estrategicamente para entregar identidade, experiência e resultado. Se a meta é elevar o nível, estou pronto para o desafio.
+      </p>
+      <div class="education">
+        <h3>Formação e Experiência</h3>
+        <ul>
+          <li><strong>Infinity School</strong> - Desenvolvimento Full Stack (HTML, CSS, JavaScript, Python)</li>
+          <li><strong>UAITEC - Brumadinho</strong> - Programação em Python</li>
+          <li><strong>UAITEC - Brumadinho</strong> - Informatica Basica e Avançada</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Seção Projetos -->
+  <section id="projects" class="projects-section">
+    <h2>Projetos</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Sub-Zero Skins</h3>
+        <p>Plataforma inovadora de marketplace para skins do CS2, projetada para oferecer uma experiência fluida e responsiva. Desenvolvido com foco em usabilidade, segurança e design moderno, garantindo transações ágeis e confiáveis para os jogadores.</p>
+        <div class="project-links">
+          <a href="https://www.instagram.com/subzero.skins/" class="btn"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://subzeroskins.com.br" class="btn">Ver Site</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Logotipos</h3>
+        <p>Criação de identidades visuais marcantes e profissionais para empresas e empreendedores. Cada logotipo é projetado com um conceito estratégico, garantindo originalidade, impacto visual e alinhamento com a identidade da marca.</p>
+        <div class="project-links">
+          <a href="https://www.instagram.com/jf.creative.lab" class="btn"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#" class="btn" data-target="logoModal">Ver Logotipos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Seção Contato -->
+  <section id="contact" class="contact-section">
+    <h2>Contato</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit" class="btn">Enviar Mensagem</button>
+    </form>
+    <div class="social-links">
+      <a href="https://linkedin.com/in/jfcreativelab" class="social-link"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/jfcreativelab" class="social-link"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+  
+  <!-- Modal de Logotipos -->
+  <div id="logoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Meus Logotipos</h2>
+        <div class="logo-gallery">
+            <img src="images/logo1.jpg" alt="Logo 1">
+            <img src="images/logo2.jpg" alt="Logo 2">
+            <img src="images/logo3.jpg" alt="Logo 3">
+            <img src="images/logo4.jpg" alt="Logo 4">
+            <img src="images/logo5.jpg" alt="Logo 5">
+            <img src="images/logo6.jpg" alt="Logo 6">
+            <img src="images/logo7.jpg" alt="Logo 7">
+        </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 João Felipe | JF Creative Lab. Todos os direitos reservados.</p>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
